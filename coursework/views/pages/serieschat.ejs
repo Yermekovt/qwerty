@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <!--Here the message will appear-->
+    <ul id="seriesMessages"></ul>
+
+    <!--For for writing a message and sending it to chat-->
+    <form id="seriesChatForm" action="">
+        <p><b>Series Chat</b></p>
+        <input id="seriesInput" autocomplete="off" />
+        <button id="sendMessage">Send</button>
+        <button id="gobackBtn">
+            <a href="chatrooms">Chat Rooms</a>
+        </button>
+    </form>
+
+    <%- include('../partials/chatscripts') %>
+</body>
+</html>

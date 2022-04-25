@@ -1,0 +1,4 @@
+//admin user
+{"_id":17,"gender":"female","name":{"first":"jenny","last":"sanders"},"email":"jenny.sanders@example.com","login":{"username":"yellowrabbit371","password":"snowbird","salt":"StSuKPp8","md5":"849fb0d4c26577cf6de9d49a84e51843","sha1":"832c0282a4cb73f85a18d8e206532eff41732c69","sha256":"b7850945c5d147587d2eae1e5c62a5da65d10b7f237cc95691ba4b554a4ef297"},"dob":"1967-01-31 14:36:55","registered":"2002-05-28 14:02:37","nat":"IE"}
+
+

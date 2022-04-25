@@ -1,0 +1,715 @@
+/* general */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500&display=swap');
+/* fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; /* убрать обводку вокруг формочек */
+}
+
+h1, h2, h3, h3, h5 {
+  font-family: 'Roboto';
+  font-weight: lighter;
+}
+
+/* bodies */
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+#filmsBody, #contactsBody, #registerBody, #chatroomsBody {
+
+  font-family: Helvetica;
+
+  background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+  background-blend-mode: multiply;
+  background-color:  #4f1c75;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* bodies */
+
+/* header */
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%; /* сверху отступ 10пх, по бокам по 0,5 процентов и снизу 0пх */
+  background: transparent; /* bacground prozrachniy */
+  float: left;
+  position: fixed; /* esli scrolim, to scrolitsy vmeste s strnitsiy */
+}
+
+header #logo {
+  color: white;
+  cursor: pointer;
+}
+
+header #logo span{
+  /*font-size: 1.8em;*/
+  font-size: 3em; /* by me */
+  line-height: 50px; /* defines the amount of space above and below inline elements. */
+  margin-left: 40px;
+  font-family: 'Beau Rivage', cursive;
+}
+
+@media (min-width: 699px) {
+  #logo{
+    float: left;
+    width: 30%;
+    font-size: 1.2em;
+  }
+
+  #nav {
+    float: right;
+    width: 66%;
+  }
+  }/* if the site is > 699px */
+
+@media (max-width: 700px) {
+  #logo{
+    margin-top: 15px;
+    width: 100%; /* cover full space */
+    font-size: 1.6em;
+  }
+  #nav {
+    float: left;
+    width: 100%;
+  }
+  }/* if the site is < 700px */
+
+  #nav {
+    text-align: center;
+    /*font-size: 1em;*/
+    font-size: 1.3em; /* by me */
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  #nav > a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #nav > a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  #nav > a:not(:last-child) {
+    margin-right: 10%;
+  }
+
+  .scrolled {
+    z-index: 5000;
+    background-color: white;
+    border-bottom: 1px solid silver;
+  }
+
+  header.scrolled #logo {
+    /*color: #343434;*/
+    color: green; /* by me */
+  }
+
+  .scrolled #nav a {color: #343434}
+  .scrolled #nav a:hover {color: #7c7c7c}
+  /* header */
+
+
+/* general */
+
+
+
+/* only for index.engs */
+
+/* top */
+#top{
+  width: 100%;
+  height: 1000px;
+  background-image: url(https://www.newstatesman.com/wp-content/uploads/sites/2/2021/12/2ATHYW0-1038x778.jpg);
+  background-blend-mode: multiply;
+  background-color: #589ad1; 
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  #top {
+    font-size: 2.1em;
+  }
+} /* if > 1000 */
+
+@media (max-width: 1000px) and (min-width: 651){
+  #top {
+    font-size: 3.1em;
+  }
+} /* this style applies to 651 < x < 1000 */
+
+@media (max-width: 650px) {
+  #top {
+    font-size: 1.3em;
+    padding-top: 50%
+  }
+} /* if < 650 */
+
+
+
+#top h1 {
+  padding-top: 20%;
+}
+#top h3 {
+  color: #ccc
+}
+/* top */
+
+/* main */
+#main, #teamInfo {
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.4em;
+}
+
+@media (min-width: 1400px) {
+  #main, #teamInfo {
+    padding: 100px 20%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1401px) {
+  #main, #teamInfo {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #main div, #teamInfo div {
+    width: 97%;
+    margin-bottom: 23px;
+  }
+}
+
+#main div, #teamInfo div {
+  width: 47%;
+  margin-right: 3%;
+  float: left;
+}
+
+#main #into h2, #teamInfo #info h2 {
+  font-size: 3em;
+}
+
+#main span, #teamInfo span {
+  color: #a0a0a0;
+}
+
+#teamInfo {
+  position: relative;
+  bottom: 40px;
+}
+/* main */
+
+#registerButton a {
+  text-decoration: none;
+  color: black;
+}
+
+/* login section */
+#login {
+  float: left;
+  background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+  background-blend-mode: multiply;
+  background-color: #4f1c75;
+  background-size: cover;
+
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  font-size: 10px;
+
+  position: relative;
+  bottom: 20px;
+
+  line-height: 150px;
+  height: 110px;
+}
+
+#login h2 {
+  font-size: 40px;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+#login h4 {
+  color: #ccc;
+  font-size: 1.6em
+}
+
+#login form {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  position: relative;
+  left: 400px;
+  top: 30px;
+}
+
+#login input, button {
+  font-size:20px;
+}
+
+#login #idone {
+  margin-left: 25%
+}
+#login #idthree {
+  margin-left: 25%
+}
+
+#login span {
+  float: left;
+  width: 100%;
+  font-size: 2.1em;
+  margin-top: 10px;
+}
+
+#login {
+  text-align: center;
+  display: inline-block;
+}
+
+
+#login {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0em;
+}
+
+
+/* search bar */
+#searchform {
+  position: absolute;
+  top: 100px;
+  left: 15px;
+}
+/* search bar */
+
+
+/* only for index.ejs */
+
+
+
+/* only for contacts.ejs */
+
+/* search form */
+#contacts {
+  width: 100%;
+  float:left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #ccc;
+}
+
+#contacts h5 {
+  font-size: 3em;
+  color: white;
+}
+
+#contacts {
+  position: absolute;
+  top: 90px;
+}
+
+#form_input {
+  margin-top: 15px;
+  width: 35%;
+  margin-left: 38%;
+  font-size: 1.2em;
+}
+
+#form_input label {
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 'Roboto';
+}
+
+#form_input label > span {
+  color: #e87e7e;
+}
+
+#form_input input, #form_input textarea {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 1em;
+  color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+  border-color: #333;
+}
+
+.btn {
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.3em;
+  background-color: #ec6550;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color: white;
+  font-weight: 'Roboto';
+}
+
+.btn:hover {
+  background-color: #c15443;
+}
+
+/* only for contacts.ejs */
+
+
+
+
+
+
+/* only for films.ejs */
+
+/* films */
+#films {
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#films h2 {font-size: 4em}
+
+#films h4 {
+  color: #ccc;
+  font-size: 1.6em
+}
+
+#films .img {
+  float:left;
+  width: 30%;
+  margin-right: 20%;
+  margin-top: 50px;
+}
+
+#films span {
+  float: left;
+  width: 100%;
+  font-size: 2.1em;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  #films .img {
+    width: 90%;
+    margin-right: 0;
+    margin-left: 10%
+  }
+}
+
+#films span {
+  float: left;
+  width: 100%;
+  font-size: 2.1em;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  #films .img {
+    width: 90%;
+    margin-right: 0;
+    margin-left: 10%
+  }
+}
+
+.img {
+  width: 5em;
+  height: 2em;
+  font-size: 5px;
+  margin: 0em 100em 100em 0em;
+  transition: all 100ms ease-in-out;
+}
+
+.img:hover{
+  transform: scale(1.2);
+}
+
+#films {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0em;
+}
+/* films */
+
+#welcomeP {
+  font-size: 2em; /* by me */
+  line-height: 50px; /* defines the amount of space above and below inline elements. */
+  margin-left: 40px;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  color: white;
+  position: relative;
+  top: 75px;
+  right: 15px;
+
+}
+
+/* search bar */
+#searchform {
+  position: absolute;
+  top: 130px;
+  left: 15px;
+}
+/* search bar */
+
+/* only for film.ejs */
+
+
+
+
+
+
+/* only chatroom.ejs*/
+#chatroomsBody {
+  background-color: purple;
+}
+
+#chatroomsMain {
+  position: fixed;
+  top:150px;
+}
+/* only chatroom.ejs*/
+
+
+
+
+
+
+/* only myaccounts.ejs */
+#myaccountBody {
+  background-color:  #4f1c75;
+}
+
+.action {
+  background-color: white;
+  border-radius: 20px;
+  height: 300px;
+  width: 270px;
+}
+
+.action {
+  position: fixed;
+  top: 100px;
+  right: 650px;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.action .accountDetails {
+  position: absolute;
+  top: 80px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fff;
+  box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.action .accountDetails ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+}
+
+.action .accountDetails ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+/* only myaccounts.ejs */
+
+
+
+
+
+
+/* only for register.ejs */
+
+#signupForm {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  top: 230px;
+}
+
+#signupForm form input, #signupForm form button, #signupForm form label {
+  font-size:150%;
+  margin-top: 20px;
+}
+
+#signupForm form label {
+  color: white;
+}
+
+/* only for register.ejs */
+
+
+
+
+
+/* general chat, film chat, series chat */
+#generalChatForm, #filmChatForm, #seriesChatForm {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#generalInput, #filmInput, #seriesInput {
+  width: 700px;
+}
+
+#gobackBtn a {
+  text-decoration: none;
+  color: black;
+}
+/* general chat, film chat, series chat */
+
+
+
+
+
+
+/* only for chatroom.ejs */
+
+.chatButton {
+  background-color: yellow;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 4px 2px;
+}
+
+.chatButton {
+  border-radius: 50%;
+}
+
+.chatButton a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#chatroomsMain {
+  text-align: center;
+}
+
+#chatroomsDesciption h1 {
+  color: yellow;
+  font-weight: bold;
+}
+
+#chatroomsMain {
+  position: absolute;
+  left: 370px;
+}
+
+#chatroomsButtons {
+  position: absolute;
+  top: 225px;
+}
+
+
+/* only for chatroom.ejs */
+
+
+/* 404.html */
+#problemsDiv {
+  height: 300px;
+  width: 900px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -400px;
+}
+
+#problemsDiv h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+/* 404.html */
+
+
+
+/* footers for all pages */
+footer{
+  background-color: #1a1a1a;
+}
+
+footer img { /* centering */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 25px;
+}
+
+#contactsFooter img, #chatroomsFooter img, #myaccountFooter img, #registerFooter img { /* centering */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 5px;
+  bottom: 35px;
+}
+
+#contactsFooter, #chatroomsFooter, #myaccountFooter, #registerFooter {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;   /* Height of the footer */
+}
+
+
+/* footers for all pages */
+
+
+
+
+

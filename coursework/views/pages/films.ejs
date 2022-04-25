@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body id="filmsBody">
+
+  <header>
+    <%- include('../partials/header') %>
+  </header>
+
+  <main id="filmsMain">
+
+    <div id="topMain">
+
+      <!--Welcoming the current user; a nickname here is retrieved from server-->
+      <p id="welcomeP">Hi, <%= nickname %>. Search for your favourit movie</p>
+
+      <!--form for searching movies-->
+      <form id="searchform">
+        <input type="text" id="searchterms">
+        <input type="submit" value="Search">
+      </form>
+      
+      <!--Here found films will appear-->
+      <div id="films">
+        
+      </div>
+
+    </div>
+    
+  </main>
+
+</body>
+</html>

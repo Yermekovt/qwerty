@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body id="myaccountBody">
+    <header>
+        <%- include('../partials/header')%>
+    </header>
+
+    <main>
+        <!--A container with the user details. All the users are retrieved from server. The server finds these details in a mongodb and sends it to client-->
+        <div id="myaccountsMain">
+            <div class="action">
+                <div class="accountDetails">
+                    <ul>
+                        <li><h1>First Name: <b><%= user.name.first %></b></h1></li>
+                        <li><h1>Last Name: <b><%= user.name.last %></b></h1></li>
+                        <li><p>gender: <b><%= user.gender %></b></p></li>
+                        <li><p>username: <b><%= user.login.username %></b></p></li>
+                        <li><p>date of birth: <b><%= user.dob %></p></b></li>
+                        <li><p>date of registration: <b><%= user.registered %></b></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    
+    <footer id="myaccountFooter">
+        <%- include('../partials/footer') %>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <!--Here the message will appear-->
+    <ul id="filmMessages"></ul>
+
+    <!--For for writing a message and sending it to chat-->
+    <form id="filmChatForm" action="">
+        <p><b>Film Chat</b></p>
+        <input id="filmInput" autocomplete="off" />
+        <button id="sendMessage">Send</button>
+        <button id="gobackBtn">
+            <a href="chatrooms">Chat Rooms</a>
+        </button>
+    </form>
+
+    <%- include('../partials/chatscripts') %>
+   
+</body>
+</html>

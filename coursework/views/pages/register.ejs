@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body id="registerBody">
+    <header>
+        <%- include('../partials/header')%>
+    </header>
+
+    <main>
+        <!--Form for signing up; all the information will be passed to server and saved in a db-->
+        <div id="signupForm">
+            <form id="registerForm" action="/newaccount" method="POST">
+                <label>Name</label>
+                <input type="text" placeholder="firstname" name="first">
+                <input type="text" placeholder="lastname"  name="last">
+                </br><label>Login</label>
+                <input type="email" placeholder="me@3bit.com"    name="email">
+                <input type="text" placeholder="username"     name="username">
+                <input type="password" placeholder="password"  name="password">
+                </br><label>Details</label>
+                <input type="text" placeholder="gender" name="gender">
+                <input type="datetime" placeholder="date of birth"    name="dob">
+                </br><button type="submit">Submit</button>
+            </form>
+          </div>
+
+    </main>
+    
+    <footer id="registerFooter">
+        <%- include('../partials/footer') %>
+    </footer>
+</body>
+</html>

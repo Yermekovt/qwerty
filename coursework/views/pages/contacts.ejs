@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body id="contactsBody">
+  <header>
+    <%- include('../partials/header') %>
+  </header>
+
+  <main id="mainForHeader">
+
+    <div id="contactsMain">
+      <!--text: Contact Us-->
+      <div id="contacts">
+        <center><h5>Contact Us</h5></center>
+        <!--Form for contacting-->
+        <form id="form_input">
+          <label for="name">Name <span>*</span></label><br>
+          <input type="text" placeholder="Enter a name" name="name" id="name"><br>
+          <label for="email">Email <span>*</span></label><br>
+          <input type="email" placeholder="Entern email" name="email" id="email"><br>
+          <label for="message">Message <span>*</span></label><br>
+          <textarea placeholder="Enter a message" name="message" id="message"></textarea><br>
+          <div id="mess_send" class="btn">Send</div>
+        </form>
+      </div>
+    </div>
+
+</main>
+
+  <footer id="contactsFooter">
+    <%- include('../partials/footer') %>
+  </footer>
+
+</body>
+</html>
